@@ -1,0 +1,19 @@
+{
+  "name": "dash-schemas",
+  "version": "0.0.0",
+  "description": "JSON Schema model schemas for use across Dash products",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dashaudio/dash-schemas.git"
+  },
+  "author": "Dash Development Team",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dashaudio/dash-schemas/issues"
+  },
+  "homepage": "https://github.com/dashaudio/dash-schemas#readme"
+}

@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Track",
+  "description": "An audio track within the Dash ecosystem",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "The unique identifier for a track",
+      "type": "string"
+    },
+    "title": {
+      "description": "Title of the track",
+      "type": "string"
+    }
+  },
+  "required": ["id", "title"]
+}
