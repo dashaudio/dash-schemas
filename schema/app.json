@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "App",
+  "description": "An app (based on https://schema.org/SoftwareApplication)",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "App name",
+      "type": "string"
+    }
+  },
+  "required": ["name"]
+}
