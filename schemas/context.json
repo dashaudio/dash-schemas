@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "#context",
   "title": "Context",
   "description": "A user context",
   "type": "object",

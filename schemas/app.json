@@ -1,5 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "app.json",
   "title": "App",
   "description": "An app (based on https://schema.org/SoftwareApplication)",
   "type": "object",
@@ -7,7 +8,8 @@
     "name": {
       "description": "App name",
       "type": "string"
-    }
+    },
+    "track": { "$ref": "track.json" }
   },
-  "required": ["name"]
+  "required": ["name", "track"]
 }

@@ -3,21 +3,27 @@ const bundler = require('gulp-jsonschema-bundle')
 const format = require('gulp-json-format')
 const mocha = require('gulp-mocha')
 
-gulp.task('schema', () => {
-  gulp.src('./schema/*.json')
+gulp.task('schemas', () => {
+  gulp.src('./schemas/**/*.json')
     .pipe(gulp.dest('build/'))
 })
 
 gulp.task('bundle', () => {
-  return gulp.src('./schema/bundle.json')
+  return gulp.src('./schemas/bundle.json')
     .pipe(bundler())
     .pipe(format(2))
     .pipe(gulp.dest('build/'))
 })
 
+gulp.task('entry', () => {
+  return gulp.src('./schemas/schemas.js')
+    .pipe(gulp.dest('build/'))
+})
+
 gulp.task('test', () => {
-  return gulp.src('test/*.spec.js')
+  return gulp.src('schemas/**/*.spec.js')
     .pipe(mocha())
 })
 
-gulp.task('default', ['schema', 'bundle', 'test'])
+gulp.task('build', ['schemas', 'bundle', 'entry'])
+gulp.task('default', ['build'])
