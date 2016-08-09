@@ -1,6 +1,6 @@
 # Schemas
 
-[JSON Schema](http://json-schema.org) data model schemas for use across products.
+[JSON Schema](http://json-schema.org) data models for use across the Dash platform.
 
 ## Quick Start
 

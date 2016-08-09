@@ -2,9 +2,13 @@
   "name": "dash-schemas",
   "version": "0.0.0",
   "description": "JSON Schema model schemas for use across Dash products",
-  "main": "index.js",
+  "main": "schemas.js",
+  "files": [
+    "build/*"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp test",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",

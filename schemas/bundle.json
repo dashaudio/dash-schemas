@@ -1,0 +1,6 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "app": { "$ref": "app.json" },
+  "context": { "$ref": "context.json" },
+  "track": { "$ref": "track.json" }
+}

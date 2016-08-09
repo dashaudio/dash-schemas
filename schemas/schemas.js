@@ -1,11 +1,7 @@
-const schemas = {
+module.exports = {
   app: require('./app.json'),
   context: require('./context.json'),
-  track: require('./track.json')
-}
+  track: require('./track.json'),
 
-const collection = {
-  all: Object.keys(schemas).map((key) => schemas[key])
+  bundle: require('./bundle.json')
 }
-
-module.exports = Object.assign(schemas, collection)
